@@ -3,8 +3,13 @@ from creds import bot_id12
 
 bot = telebot.TeleBot(bot_id12)
 
+
+@bot.message_handler(commands=['start'])
+def start_message(message):
+    bot.send_message(message.chat.id, 'Привет, ты написал мне /start')
+
 @bot.message_handler(commands=['ali', 'help', 'psi', 'sag', 'temp'])
-def send_welcome(message):
+def send_text(message):
 	bot.reply_to(message, "hello how low")
 
 	if message.text == "/ali":
