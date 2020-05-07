@@ -10,7 +10,6 @@ def start_message(message):
 
 @bot.message_handler(commands=['ali', 'help', 'psi', 'sag', 'temp'])
 def send_text(message):
-	bot.reply_to(message, "hello how low")
 
 	if message.text == "/ali":
 		bot.send_message(message.from_user.id, "going to ali page")
@@ -34,7 +33,7 @@ def send_text(message):
 
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
-	bot.reply_to(message, message.text)
+	bot.reply_to(message, "for list of commands type /help.")
 
 
 
