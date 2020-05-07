@@ -15,7 +15,7 @@ def send_text(message):
 		bot.send_message(message.from_user.id, "going to ali page")
 
 	elif message.text == "/help":
-		bot.send_message(message.from_user.id, "list of commands")
+		bot.send_message(message.from_user.id, "list of commands: /ali, /psi, /sag, /temp")
 
 	elif message.text == "/psi":
 	   	bot.send_message(message.from_user.id, "psi to bar calc")
