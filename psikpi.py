@@ -9,11 +9,11 @@ i_convention = temp[-1]
 
 #psi - bar convention
 if i_convention.upper() == "I":
-  result = int(round(degree * 0.0689))
+  result = int(round(degree * 0.0689, 2))
   o_convention = "bar"
 #bar - psi convention
 elif i_convention.upper() == "R":
-  result = int(round(degree * 14))
+  result = int(round(degree * 14, 2))
   o_convention = "psi"
 else:
   print("Input proper convention.")
