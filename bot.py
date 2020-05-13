@@ -1,5 +1,6 @@
-import telebot
+﻿import telebot
 from creds import bot_id12
+from psikpi import *
 
 bot = telebot.TeleBot(bot_id12)
 
