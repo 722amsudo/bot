@@ -1,21 +1,23 @@
-temp = input("Input the  temperature you like to convert? (e.g., 1.2bar, 17.5psi etc.) : ")
-degree = float(temp[:-3])
-i_convention = temp[-1]
+def psikpifunct ():
 
-#i_convention.upper() == "i"
-#print (i_convention)
+	temp = input("Input the  temperature you like to convert? (e.g., 1.2bar, 17.5psi etc.) : ")
+	degree = float(temp[:-3])
+	i_convention = temp[-1]
 
-#print (degree)
+	#i_convention.upper() == "i"
+	#print (i_convention)
 
-#psi - bar convention
-if i_convention.upper() == "I":
-  result = float(round(degree * 0.0689, 2))
-  o_convention = "bar"
-#bar - psi convention
-elif i_convention.upper() == "R":
-  result = float(round(degree * 14, 2))
-  o_convention = "psi"
-else:
-  print("Input proper convention.")
-  quit()
-print("The pressure in", o_convention, "is", result, o_convention)
+	#print (degree)
+
+	#psi - bar convention
+	if i_convention.upper() == "I":
+	  result = float(round(degree * 0.0689, 2))
+	  o_convention = "bar"
+	#bar - psi convention
+	elif i_convention.upper() == "R":
+	  result = float(round(degree * 14, 2))
+	  o_convention = "psi"
+	else:
+	  print("Input proper convention.")
+	  quit()
+	print("The pressure in", o_convention, "is", result, o_convention)
