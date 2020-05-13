@@ -1,6 +1,6 @@
-def psikpifunct ():
+def psikpifunct (temp):
 
-	temp = input("Input the  temperature you like to convert? (e.g., 1.2bar, 17.5psi etc.) : ")
+#	temp = input("Input the  temperature you like to convert? (e.g., 1.2bar, 17.5psi etc.) : ")
 	degree = float(temp[:-3])
 	i_convention = temp[-1]
 
