@@ -1,3 +1,3 @@
 def kglbs (weight):
 
-	test = 122
+	test = "122"
