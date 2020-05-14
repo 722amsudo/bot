@@ -5,6 +5,14 @@ from kglbs import *
 
 bot = telebot.TeleBot(bot_id12)
 
+#function that runs if /kglbs is called
+
+def fun_kglbs():
+	bot.send_message(message.from_user.id, "going to test function")
+
+
+
+
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
@@ -14,7 +22,7 @@ def start_message(message):
 def send_text(message):
 
 	if message.text == "/kglbs":
-		kglbs()
+		fun_kglbs()
 
 	elif message.text == "/help":
 		bot.send_message(message.from_user.id, "list of commands: /kglbs, /psi, /sag, /temp")
