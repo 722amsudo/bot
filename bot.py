@@ -1,6 +1,7 @@
 ﻿import telebot
 from creds import bot_id12
 from psikpi import *
+from kglbs import *
 
 bot = telebot.TeleBot(bot_id12)
 
@@ -9,14 +10,14 @@ bot = telebot.TeleBot(bot_id12)
 def start_message(message):
     bot.send_message(message.chat.id, 'Привет, ты написал мне /start')
 
-@bot.message_handler(commands=['ali', 'help', 'psi', 'sag', 'temp'])
+@bot.message_handler(commands=['kglbs', 'help', 'psi', 'sag', 'temp'])
 def send_text(message):
 
-	if message.text == "/ali":
-		bot.send_message(message.from_user.id, "going to ali page")
+	if message.text == "/kglbs":
+		bot.send_message(message.from_user.id, "going to test function")
 
 	elif message.text == "/help":
-		bot.send_message(message.from_user.id, "list of commands: /ali, /psi, /sag, /temp")
+		bot.send_message(message.from_user.id, "list of commands: /kglbs, /psi, /sag, /temp")
 
 	elif message.text == "/psi":
 	   	bot.send_message(message.from_user.id, "psi to bar calc", psikpifunct ())
