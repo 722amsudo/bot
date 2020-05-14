@@ -1,5 +1,5 @@
 
-def kglbs()
+def kglbs():
 	bot.send_message(message.from_user.id, "going to test function")
 
 
