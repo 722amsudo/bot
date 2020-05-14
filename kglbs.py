@@ -3,7 +3,7 @@
 #        bot.send_message(message.from_user.id, "going to test function")
 
 
-def answ():
+#def answ():
         
 
 def my_test(fname):
