@@ -12,7 +12,7 @@ bar = "zzzzz"
 def start_message(message):
     bot.send_message(message.chat.id, 'Привет, ты написал мне /start')
 
-@bot.message_handler(commands=['psikpi', 'psi', 'bar'])
+@bot.message_handler(commands=['psibar', 'psi', 'bar'])
 def send_text(message):
 
 	if message.text == "/psibar":
