@@ -19,7 +19,7 @@ def send_text(message):
 		bot.send_message(message.from_user.id, "use /to_psi to convert bar-psi or /to_bar to convert psi-bar")
 		
 	elif message.text == "/to_psi":
-		bot.send_message(message.from_user.id, psi)
+		bot.send_message(message.from_user.id, "amount of psi to convert (example: 12.5)")
 		
 	elif message.text == "/to_bar":
 		bot.send_message(message.from_user.id, bar)	
