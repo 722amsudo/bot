@@ -5,23 +5,23 @@ from psikpi import *
 bot = telebot.TeleBot(bot_id12)
 
 test_f = "fffff"
-test_p = "ppppp"
-test_z = "zzzzz"
+psi = "ppppp"
+bar = "zzzzz"
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
     bot.send_message(message.chat.id, 'Привет, ты написал мне /start')
 
-@bot.message_handler(commands=['ali', 'ppp', 'zzz'])
+@bot.message_handler(commands=['psikpi', 'psi', 'bar'])
 def send_text(message):
 
-	if message.text == "/ali":
-		bot.send_message(message.from_user.id, test_f)
+	if message.text == "/psibar":
+		bot.send_message(message.from_user.id, "use /to_psi to convert bar-psi or /to_bar to convert psi-bar")
 		
-	elif message.text == "/ppp":
+	elif message.text == "/psi":
 		bot.send_message(message.from_user.id, test_p)
 		
-	elif message.text == "/zzz":
+	elif message.text == "/bar":
 		bot.send_message(message.from_user.id, test_z)	
 
 	else:
