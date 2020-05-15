@@ -14,7 +14,7 @@ def start_message(message):
 def send_text(message):
 
 	if message.text == "/ali":
-		bot.send_message(message.from_user.id, "going to ali page")
+		bot.send_message(message.from_user.id, test_f)
 
 	else:
 	  	bot.send_message(message.from_user.id, "for list of commands type /help.")
