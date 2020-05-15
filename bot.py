@@ -4,6 +4,7 @@ from psikpi import *
 
 bot = telebot.TeleBot(bot_id12)
 
+test_f = "hop"
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
