@@ -9,7 +9,7 @@ bot = telebot.TeleBot(bot_id12)
 def start_message(message):
     bot.send_message(message.chat.id, 'Привет, ты написал мне /start')
 
-@bot.message_handler(commands=['ali'])
+@bot.message_handler(commands=['ali1'])
 def send_text(message):
 
 	if message.text == "/ali":
