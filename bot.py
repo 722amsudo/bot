@@ -24,11 +24,11 @@ def send_text(message):
 	elif message.text == "/to_psi":
 		bot.send_message(message.from_user.id, "amount of psi to convert (example: 12.5)")
 		try:
-		        psi0 = message.text.split(' ')
-		        psi1 = round(float(psi0), 2)
-			bot.send_message(message.from_user.id, psi1)
+		    psi0 = message.text.split(' ')
+		    psi1 = round(float(psi0), 2)
+		    bot.send_message(message.from_user.id, psi1)
 		except TypeError:
-		        bot.send_message(message.from_user.id, "write like 1.2 bar")
+		    bot.send_message(message.from_user.id, "write like 1.2 bar")
 		
 	elif message.text == "/to_bar":
 		bot.send_message(message.from_user.id, bar)	
