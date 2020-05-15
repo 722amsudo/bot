@@ -8,6 +8,7 @@ test_f = "fffff"
 psi = "ppppp"
 bar = "zzzzz"
 
+
 @bot.message_handler(commands=['start'])
 def start_message(message):
     bot.send_message(message.chat.id, 'Привет, ты написал мне /start')
