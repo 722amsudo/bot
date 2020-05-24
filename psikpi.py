@@ -1,3 +1,24 @@
+def psi_to_kpi (pressure):
+	pressure_out = float(round(pressure * 0.0689, 2))
+	return pressure_out
+
+
+
+
+
+
+
+
+def kpi_to_psi (pressure):
+	pressure_out = float(round(degree * 14, 2))
+	return pressure_out
+
+
+
+
+
+
+"""
 def psikpifunct (temp):
 
 #	temp = input("Input the  temperature you like to convert? (e.g., 1.2bar, 17.5psi etc.) : ")
@@ -21,3 +42,4 @@ def psikpifunct (temp):
 	  print("Input proper convention.")
 	  quit()
 	print("The pressure in", o_convention, "is", result, o_convention)
+"""
